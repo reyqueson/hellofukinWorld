@@ -1,0 +1,24 @@
+<div class='BlueCla' *ngFor="let twText of twTexts">
+  <div class='closeButton'>
+    <button (click)="twEraser(twText)" >X</button>
+  </div>
+  Tweet: {{ twText }}
+  <div class="ano">2018:
+    <tweet [twTuitero]="twText"></tweet>
+      :<div style='display:inline;' *ngFor="let twGroup of twFirmas">  
+        <code id="fukinTiff"> {{ twGroup }} </code>
+       </div>
+  </div>
+</div>
+<div class="BlueCla2">
+  <code class="perfil" style="font-size: 18px;">
+    Author: <span id="fukinRed">{{ author }}</span></code>
+  <code>
+    Address: {{ address.street }}
+    <br>City: {{ address.city }}
+    <br>Hobbies:
+    <div style="display:inline;" *ngFor="let hobby of hobbies">
+      <code style="color: greenyellow;"> {{ hobby }}</code>
+    </div>
+  </code>
+</div>

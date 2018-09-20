@@ -1,0 +1,10 @@
+<div class="tiffCla" *ngFor="let post of posts">
+  <div class='closeButton'>
+    <button (click)="psEraser(post)">X</button>
+  </div>
+  <code class="perfil" style="font-size:9px;max-width:270px;">
+    Head: <span id="fukinTiff">{{ post.title }}</span></code>
+  <code>
+    Copy: {{ post.body }}. Id: {{ post.id }} 
+  </code>
+</div>

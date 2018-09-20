@@ -1,0 +1,58 @@
+.container {
+    /* background: black; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    grid-template-rows: 10px;
+    grid-gap: 5px;
+    justify-content: center;
+}
+
+.item {
+    background: rgba(180, 178, 179, 0.15);
+    border-radius: 5px;
+    padding: 10px;
+    animation-name: zoom;
+}
+
+.item img {
+    max-width: 100%;
+}
+
+.l4 {
+    grid-row-end: span 22;
+    animation-duration: 0.6s;
+}
+.l1 {
+    grid-row-end: span 10;
+    animation-duration: 0.3s;
+}
+.l3 {
+    grid-row-end: span 20;
+    animation-duration: 0.5s;
+}
+.l2 {
+    grid-row-end: span 12;
+    animation-duration: 0.3s;
+}
+.l5 {
+    grid-row-end: span 24;
+    animation-duration: 0.7s;
+}
+
+img:hover {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+#fukinImagen {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#fukinImagen:hover { opacity: 0.7; }
+
+@keyframes zoom {
+    from { transform: scale(0) translateX(-1500px) }
+    to { transform: scale(1) translateX(0) } 
+}

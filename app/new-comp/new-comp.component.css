@@ -1,0 +1,19 @@
+p {
+    font-size: 26px;
+}
+.GreenCla {
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    margin: auto;
+    color: rgb(131, 131, 131);
+    background: rgb(36, 36, 36);
+    border-left: solid 10px rgb(47, 255, 203);
+    text-align: left;
+    font-family: 'Helvetica';
+    font-size: 14px;
+}
+.ano {
+    font-size: 9px;
+    color: rgb(78, 78, 78);
+}

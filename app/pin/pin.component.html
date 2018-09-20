@@ -1,0 +1,34 @@
+<div class="container">
+   <div *ngFor="let pin of pins" class="{{pin.item}}">
+    <img id="fukinOrigen{{pin.fukinPinNumber}}" 
+    src="assets/img/pix{{pin.fukinPinNumber}}.jpg" 
+    alt="{{pin.alt}}"
+    (click)="fukinZoom(pin.fukinPinNumber)"        
+    >
+   </div>
+   
+</div>
+
+  <!-- 
+
+(@flyInOut.start)="animationStarted($event)"
+(@flyInOut.done)="animationDone($event)"        
+[@flyInOut]="'in'"
+[@heroState]="hero.state"
+(click)="hero.toggleState()">
+
+  <div class="item l3">
+    <a href="assets/img/pix2.jpg">
+      <img src="assets/img/pix2.jpg" alt="">
+    </a>
+  </div>
+  <div class="item l1">
+      <img (click)="fukinZoom(3)" id="fukinOrigen3" src="assets/img/pix3.jpg" alt="con fukin modal">
+  </div>
+  -->
+
+<div id="fukinModalId" class="fukinModalClase">
+  <span (click)="fukinClose()" class="modalCloseButton">&times;</span>
+  <img class="modalContent" id="fukinImagenModal" src="assets/img/pix1.jpg">
+  <div id="caption"></div>
+</div>

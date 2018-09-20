@@ -1,0 +1,21 @@
+p {
+    font-size: 26px;
+    background: greenyellow;
+}
+.BlueCla {
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 8px;
+    color: rgb(153, 153, 153);
+    background: rgb(37, 37, 37);
+    border-left: solid 10px rgb(47, 144, 255);
+    text-align: left;
+    font-family: 'Helvetica';
+    font-size: 18px;
+}
+.ano {
+    font-size: 9px;
+    color: rgb(68, 68, 68);
+}
